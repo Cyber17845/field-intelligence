@@ -1,0 +1,186 @@
+{
+ "publications": [
+  {
+   "slug": "bm",
+   "folder": "building-mechanical",
+   "publication": "Building & Mechanical",
+   "audience": "the owner of a mechanical contracting business",
+   "verticals": [
+    "HVAC",
+    "Plumbing",
+    "Electrical",
+    "Solar & Storage",
+    "Commercial Refrigeration"
+   ],
+   "issues": [
+    {
+     "headline": "Section 232 tariffs cut residential HVAC duty to 15%, but commercial refrigeration, copper pipe and electrical wire still pay 25% as copper hit a record $6.71 a pound",
+     "summary": "Plumbing and HVAC/R distributors posted August 2026 price hikes from 3% to 25%, the EV charger tax credit expired June 30, lead-service-line replacement plans are due November 1, 2027, and Texas adopts the 2026 electrical code September 1 \u2014 every claim sourced.",
+     "items": 10,
+     "charts": 3,
+     "pdf": "BuildingMechanical-001.pdf",
+     "kb": 433,
+     "number": "001",
+     "date": "2026-08-17"
+    }
+   ]
+  },
+  {
+   "slug": "build",
+   "folder": "build-renovate",
+   "publication": "Build & Renovate",
+   "audience": "the owner of a building, roofing or renovation business",
+   "verticals": [
+    "Roofing",
+    "Restoration",
+    "Garage Door",
+    "Exteriors",
+    "General Contracting",
+    "Home Building"
+   ],
+   "issues": [
+    {
+     "headline": "A 50% tariff on Canadian cement, plywood and furniture takes effect August 19 under a century-old trade law, even as softwood lumber duties keep falling",
+     "summary": "OSHA proposed a $172,324 roofing-fall fine, California's contractor workers'-comp fines doubled to $10,000-$20,000, Sherwin-Williams raised paint 9% and bulk solvent 18% on May 1, and impact windows now cost $1,200 to $2,250 more per project \u2014 every claim sourced.",
+     "items": 12,
+     "charts": 3,
+     "pdf": "BuildRenovate-001.pdf",
+     "kb": 424,
+     "number": "001",
+     "date": "2026-08-17"
+    }
+   ]
+  },
+  {
+   "slug": "home",
+   "folder": "home-services",
+   "publication": "Home Services",
+   "audience": "the owner of a residential services business",
+   "verticals": [
+    "Pest Control",
+    "Septic & Sewer",
+    "Landscape",
+    "Pool",
+    "Appliance Repair",
+    "Moving"
+   ],
+   "issues": [
+    {
+     "headline": "BLS's July CPI shows motor fuel up 24.8% over the year while motor vehicle insurance fell 4.5%, its second straight monthly decline, released August 12, 2026",
+     "summary": "Water, sewer and trash prices rose 4.6% against 3.4% overall CPI, the H-2B supplemental window stays open until September 15, PoolCorp's Q2 sales hit $1.8 billion as margin slipped to 29.7%, and Commerce proposed 25% tariffs on cargo trailers \u2014 every claim sourced.",
+     "items": 12,
+     "charts": 3,
+     "pdf": "HomeServices-001.pdf",
+     "kb": 435,
+     "number": "001",
+     "date": "2026-08-17"
+    }
+   ]
+  },
+  {
+   "slug": "facilities",
+   "folder": "commercial-facilities",
+   "publication": "Commercial & Facilities",
+   "audience": "the owner of a commercial services or facilities business",
+   "verticals": [
+    "Fire Protection",
+    "Paving",
+    "Facilities Services",
+    "Security Systems",
+    "Elevator",
+    "Venue & Catering"
+   ],
+   "issues": [
+    {
+     "headline": "Construction input prices were flat in July 2026 but 7.4% above a year ago, with steel mill products up 22.5% and diesel up over 50 cents a gallon",
+     "summary": "Missouri's posted asphalt price jumped 24.4% to $605.00 by June, the construction backlog indicator fell to 8.0 months, commercial property insurance fell 8.1% for a fifth straight quarter, and NFPA 72 cuts the alarm-impairment window from 24 hours to 8 \u2014 every claim sourced.",
+     "items": 12,
+     "charts": 3,
+     "pdf": "CommercialFacilities-001.pdf",
+     "kb": 420,
+     "number": "001",
+     "date": "2026-08-17"
+    }
+   ]
+  },
+  {
+   "slug": "professional",
+   "folder": "professional-services",
+   "publication": "Professional Services",
+   "audience": "the owner of a professional services firm",
+   "verticals": [
+    "Property Management",
+    "Independent Practices",
+    "Independent Agencies",
+    "Small Accounting Practices",
+    "Staffing Agencies",
+    "Brokerages and Agent Teams"
+   ],
+   "issues": [
+    {
+     "headline": "FinCEN's August 14 final rule permanently ends federal beneficial-ownership reporting for domestic small businesses, exempting an estimated 32 million companies from Corporate Transparency Act filings",
+     "summary": "RentGrow will pay $2.25 million to settle FTC tenant-screening claims, the No Surprises Act arbitration fee drops from $115 to $15, the IRS mileage rate rises to 76 cents July 1, and the blocked $100,000 H-1B fee expires September 20 \u2014 every claim sourced.",
+     "items": 12,
+     "charts": 3,
+     "pdf": "ProfessionalServices-001.pdf",
+     "kb": 428,
+     "number": "001",
+     "date": "2026-08-17"
+    }
+   ]
+  },
+  {
+   "slug": "practice",
+   "folder": "practices",
+   "publication": "Practices",
+   "audience": "the owner of an independent practice",
+   "verticals": [
+    "Dental",
+    "Veterinary",
+    "Aesthetics",
+    "Chiropractic & Physical Therapy",
+    "Optometry & Vision",
+    "Behavioral & Mental Health"
+   ],
+   "issues": [
+    {
+     "headline": "CMS proposed cutting the Medicare conversion factor 1.68% to $32.84 for 2027, adding a richer visit-complexity modifier and new remote-monitoring staffing rules; comments close September 14",
+     "summary": "Dental staff costs are up 23% since 2021 while insurance reimbursement rose 21% and Medicaid 18%, Medicaid work requirements begin October 1, Indiana's first med-spa law requires registration by January 1, 2027, and HHS awarded $223.1 million in behavioral-health grants \u2014 every claim sourced.",
+     "items": 12,
+     "charts": 3,
+     "pdf": "Practices-001.pdf",
+     "kb": 429,
+     "number": "001",
+     "date": "2026-08-17"
+    }
+   ]
+  },
+  {
+   "slug": "automotive",
+   "folder": "automotive-services",
+   "publication": "Automotive Services",
+   "audience": "the owner of a shop",
+   "verticals": [
+    "Collision Repair",
+    "General Auto Repair",
+    "Tire & Wheel",
+    "Auto Glass",
+    "Towing & Roadside",
+    "Car Wash & Detailing"
+   ],
+   "issues": [
+    {
+     "headline": "TechForce's 2026 report finds U.S. auto-service, collision and diesel shops face a combined 43,135-technician annual shortfall, with collision hiring covering only 43 percent of need",
+     "summary": "Commerce set a final tire-tariff rate up to 78.33% on August 14, Illinois' right-to-appraisal law takes effect July 1, 2027, and Mister Car Wash went private at roughly $3.1 billion as ZIPS filed Chapter 11 with $653.9 million in debt \u2014 every claim sourced.",
+     "items": 12,
+     "charts": 3,
+     "pdf": "AutomotiveServices-001.pdf",
+     "kb": 435,
+     "number": "001",
+     "date": "2026-08-17"
+    }
+   ]
+  }
+ ],
+ "updated": "2026-08-17"
+}
