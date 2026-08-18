@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Desk — CernoGlobus Field Intelligence</title>
+<meta name="description" content="The half of the brief that comes from you. Answer the issue's question, ask us to look into something, send a tip.">
+<meta property="og:title" content="The Desk — CernoGlobus Field Intelligence">
+<meta property="og:description" content="The half of the brief that comes from you. Answer the issue's question, ask us to look into something, send a tip.">
+<meta property="og:type" content="website">
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#EFEBE4;color:#14181F;
+ font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+ -webkit-font-smoothing:antialiased}
+a{color:#B4460E;text-decoration:none}
+a:hover{text-decoration:underline}
+.sheet{max-width:1000px;margin:0 auto;background:#fff;min-height:100vh}
+.bar{background:#14181F;color:#fff}
+.bar .in{max-width:900px;margin:0 auto;padding:15px 34px;display:flex;
+ justify-content:space-between;align-items:center;gap:14px;
+ font-size:13px;font-weight:600;letter-spacing:.13em;text-transform:uppercase}
+.bar a{color:#fff;text-decoration:none}
+.bar .r a{color:#B9B2A6}
+.bar .r a:hover{color:#fff}
+.body{max-width:900px;margin:0 auto;padding:44px 34px 60px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:52px;line-height:1.04;
+ margin:0 0 14px;letter-spacing:-.02em;font-weight:700}
+h1.pub{font-size:44px}
+.tag{font-family:Georgia,serif;font-style:italic;font-size:19px;line-height:1.5;
+ color:#3A4047;margin:0 0 28px;max-width:46ch}
+.segs{background:#F4F0E9;border-left:3px solid #B4460E;padding:9px 14px;
+ margin:0 0 18px;font-size:14px;color:#3A4047;border-radius:0 3px 3px 0;max-width:64ch}
+.segs b{color:#14181F}
+.hr{height:3px;background:#14181F;margin:0 0 32px}
+.sec{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+ color:#6F675E;margin:0 0 22px}
+.card{display:flex;gap:28px;align-items:flex-start;padding:0 0 28px;margin:0 0 28px;
+ border-bottom:1px solid #DCD5C9}
+.card:last-child{border-bottom:0;margin-bottom:0}
+.cov{flex:0 0 168px}
+.cov img{width:168px;height:auto;display:block;border:1px solid #DCD5C9;
+ box-shadow:0 2px 10px rgba(20,24,31,.10)}
+.meta{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+ color:#B4460E;margin:0 0 8px}
+.meta span{color:#6F675E;font-weight:600}
+.card h2{font-family:Georgia,serif;font-size:24px;line-height:1.22;margin:0 0 9px;
+ letter-spacing:-.01em}
+.card h2 a{color:#14181F}
+.segline{background:#F4F0E9;border-left:3px solid #B4460E;padding:6px 11px;
+ margin:0 0 9px;font-size:13px;color:#3A4047;border-radius:0 2px 2px 0}
+.segline b{color:#14181F}
+.sum{margin:0 0 12px;color:#3A4047;font-size:15.5px;line-height:1.6}
+.btn{display:inline-block;background:#B4460E;color:#fff;font-weight:700;
+ font-size:14px;padding:10px 18px;border-radius:3px;letter-spacing:.01em}
+.btn:hover{background:#93380B;text-decoration:none}
+.btn.ghost{background:#fff;color:#B4460E;border:1px solid #B4460E}
+.btn.ghost:hover{background:#FBF6F2}
+.gap{display:inline-block;width:8px}
+.foot{background:#14181F;color:#B9B2A6}
+.foot .in{max-width:900px;margin:0 auto;padding:22px 34px;display:flex;
+ justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px}
+.foot a{color:#fff}
+.back{font-size:14px;color:#6F675E;display:inline-block;margin:0 0 20px}
+@media (max-width:720px){
+ h1{font-size:36px} h1.pub{font-size:31px}
+ .body{padding:32px 20px 44px} .bar .in,.foot .in{padding:14px 20px}
+ .card{flex-direction:column;gap:16px} .cov{flex:none} .cov img{width:148px}
+ .card h2{font-size:20px}
+}
+
+.ask{border-top:1px solid #DCD5C9;padding:22px 0 4px;margin:0}
+.ask h3{font-family:Georgia,serif;font-size:21px;margin:0 0 8px;font-weight:700}
+.ask p{margin:0 0 14px;color:#3A4047;font-size:15.5px;line-height:1.6}
+.ask a{font-weight:700;font-size:14.5px}
+.form{border-top:1px solid #DCD5C9;padding:22px 0 0;margin:30px 0 0}
+.form label{display:block;margin:0 0 16px}
+.form span{display:block;font-size:14.5px;color:#3A4047;margin:0 0 6px}
+.form textarea{width:100%;min-height:52px;padding:10px 12px;font:15px/1.5 inherit;
+ color:#14181F;background:#fff;border:1px solid #C9C2B6;border-radius:3px;resize:vertical}
+.form textarea:focus{outline:2px solid #B4460E;outline-offset:-1px;border-color:#B4460E}
+.fine{font-size:13.5px;color:#6F675E;line-height:1.65;margin:14px 0 0}
+</style></head><body><div class="sheet">
+<div class="bar"><div class="in"><a href="https://www.cernoglobus.com">CernoGlobus</a>
+<span class="r"><a href="/">All briefs</a> &nbsp;&middot;&nbsp; <a href="/desk/">The desk</a></span></div></div>
+<div class="body"><a class="back" href="/">&larr; All issues</a><h1>The Desk</h1><p class="tag">The half of the brief that comes from you.</p><div class="hr"></div><p class="sum">Every issue asks one question and prints what came back. But the brief is better when the traffic runs both ways all the time, not once a fortnight &mdash; so this page is open.</p><p class="sum" style="margin-bottom:26px">There are three things worth sending, and none of them takes more than a line. Nothing is published with your name or your company on it unless you say so in the message.</p><div class="ask"><h3>Answer this issue's question</h3><p>Every issue ends with one question about something in that issue. Reply with a line and it may run next issue, attributed to something like &ldquo;9-truck shop, Manassas&rdquo; and nothing more.</p><a href="mailto:info@cernoglobus.com?subject=Brief%20%E2%80%94%20answering%20this%20issue%27s%20question">Answer this issue's question &rarr;</a></div><div class="ask"><h3>Ask us to look into something</h3><p>This is the useful one. If there's a rule you can't get a straight answer on, a price increase you suspect isn't real, or a programme nobody will explain &mdash; tell us and we'll do the digging. If it stands up, it runs as an item, and you get the answer either way.</p><a href="mailto:info@cernoglobus.com?subject=Brief%20%E2%80%94%20something%20worth%20looking%20into">Ask us to look into something &rarr;</a></div><div class="ask"><h3>Send a tip</h3><p>Something moving in your county we'd otherwise miss. A permit change, an inspector's new position, a competitor bought out, a distributor letter doing the rounds. Local intelligence is the part we can't get from the trade press.</p><a href="mailto:info@cernoglobus.com?subject=Brief%20%E2%80%94%20a%20tip">Send a tip &rarr;</a></div><div class="form"><h3 style="font-family:Georgia,serif;font-size:21px;margin:0 0 8px">Or fill this in</h3><p class="sum">Five prompts, all optional. Nothing is sent anywhere until you press the button &mdash; it opens your own email with the answers filled in, so you can see exactly what goes and edit it first.</p><div id="deskform"><label><span>What do you do, and roughly how many people?</span><textarea data-q="What do you do, and roughly how many people?" rows="2"></textarea></label><label><span>What should we look into?</span><textarea data-q="What should we look into?" rows="2"></textarea></label><label><span>Anything happening locally we'd miss?</span><textarea data-q="Anything happening locally we'd miss?" rows="2"></textarea></label><label><span>What in the brief has actually been useful?</span><textarea data-q="What in the brief has actually been useful?" rows="2"></textarea></label><label><span>What would you cut?</span><textarea data-q="What would you cut?" rows="2"></textarea></label></div><p><a class="btn" id="mk" href="#" role="button">Open this in my email &nbsp;&rarr;</a></p><p class="fine">No form data leaves this page. The button builds an email in your own client and you send it, or don't.</p><p class="fine">We read every one. We don't add you to anything for writing in, we don't pass your address on, and we don't follow up with a sales call &mdash; if you want to talk to us about the products, the links are all over the brief already.</p></div>
+<script>
+(function(){
+  var b=document.getElementById('mk');
+  if(!b) return;
+  b.addEventListener('click',function(){
+    var parts=[],fs=document.querySelectorAll('#deskform textarea');
+    for(var i=0;i<fs.length;i++){
+      var v=(fs[i].value||'').trim();
+      if(v) parts.push(fs[i].getAttribute('data-q')+'\n'+v);
+    }
+    var body=parts.length?parts.join('\n\n'):'';
+    window.location.href='mailto:info@cernoglobus.com?subject='
+      +encodeURIComponent('Brief \u2014 from the desk form')
+      +'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</div><div class="foot"><div class="in">
+<span>&copy; CernoGlobus &middot; Field Intelligence &middot; the AI division of CyberSainya</span>
+<span><a href="https://www.cernoglobus.com/#contact">Subscribe</a> &nbsp;&middot;&nbsp;
+<a href="https://www.cernoglobus.com/ai-for-business-growth">AI for Business Growth</a> &nbsp;&middot;&nbsp;
+<a href="https://www.cernoglobus.com/#platforms">The Revenue Engine</a></span>
+</div></div></div></body></html>
