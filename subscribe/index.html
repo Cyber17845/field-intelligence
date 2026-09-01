@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Subscribe — CernoGlobus Field Intelligence</title>
+<meta name="description" content="Pick the trade papers you want. Seven titles across forty-one service segments, every other Monday, free.">
+<meta property="og:title" content="Subscribe — CernoGlobus Field Intelligence">
+<meta property="og:description" content="Pick the trade papers you want. Seven titles across forty-one service segments, every other Monday, free.">
+<meta property="og:type" content="website">
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#EFEBE4;color:#14181F;
+ font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+ -webkit-font-smoothing:antialiased}
+a{color:#B4460E;text-decoration:none}
+a:hover{text-decoration:underline}
+.sheet{max-width:1000px;margin:0 auto;background:#fff;min-height:100vh}
+.bar{background:#14181F;color:#fff}
+.bar .in{max-width:900px;margin:0 auto;padding:15px 34px;display:flex;
+ justify-content:space-between;align-items:center;gap:14px;
+ font-size:13px;font-weight:600;letter-spacing:.13em;text-transform:uppercase}
+.bar a{color:#fff;text-decoration:none}
+.bar .r a{color:#B9B2A6}
+.bar .r a:hover{color:#fff}
+.body{max-width:900px;margin:0 auto;padding:44px 34px 60px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:52px;line-height:1.04;
+ margin:0 0 14px;letter-spacing:-.02em;font-weight:700}
+h1.pub{font-size:44px}
+.tag{font-family:Georgia,serif;font-style:italic;font-size:19px;line-height:1.5;
+ color:#3A4047;margin:0 0 28px;max-width:46ch}
+.seglabel{font-size:11.5px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+ color:#B4460E;margin:0 0 8px}
+.segs{margin:0 0 16px;max-width:64ch}
+.seg{display:inline-block;background:#F4F0E9;border:1px solid #E4DCCE;color:#2E343B;
+ font-size:13px;font-weight:600;line-height:1.35;padding:5px 10px;border-radius:3px;
+ margin:0 6px 6px 0;white-space:nowrap}
+.hr{height:3px;background:#14181F;margin:0 0 32px}
+.sec{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+ color:#6F675E;margin:0 0 22px}
+.card{display:flex;gap:26px;align-items:flex-start;padding:24px 26px;margin:0 0 20px;
+ border:1px solid #DCD5C9;border-left:4px solid #B4460E;border-radius:5px;background:#fff}
+.card:hover{border-color:#C7BEB0;border-left-color:#B4460E}
+.card .txt{flex:1;min-width:0}
+.name{font-family:Georgia,serif;font-size:29px;line-height:1.1;margin:0 0 12px;
+ letter-spacing:-.015em;font-weight:700}
+.name a{color:#14181F}
+.inthis{border-top:1px solid #EBE5DB;padding:14px 0 0;margin:4px 0 16px}
+.kick{font-size:11.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+ color:#6F675E;margin:0 0 6px}
+.lead{font-family:Georgia,serif;font-size:17.5px;line-height:1.35;margin:0 0 8px}
+.lead a{color:#14181F}
+.cov{flex:0 0 168px}
+.cov img{width:168px;height:auto;display:block;border:1px solid #DCD5C9;
+ box-shadow:0 2px 10px rgba(20,24,31,.10)}
+.meta{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+ color:#B4460E;margin:0 0 8px}
+.meta span{color:#6F675E;font-weight:600}
+.card h2{font-family:Georgia,serif;font-size:24px;line-height:1.22;margin:0 0 9px;
+ letter-spacing:-.01em}
+.card h2 a{color:#14181F}
+.sum{margin:0;color:#4A5158;font-size:14.5px;line-height:1.55}
+.btn{display:inline-block;background:#B4460E;color:#fff;font-weight:700;
+ font-size:14px;padding:10px 18px;border-radius:3px;letter-spacing:.01em}
+.btn:hover{background:#93380B;text-decoration:none}
+.btn.ghost{background:#fff;color:#B4460E;border:1px solid #B4460E}
+.btn.ghost:hover{background:#FBF6F2}
+.gap{display:inline-block;width:8px}
+.foot{background:#14181F;color:#B9B2A6}
+.foot .in{max-width:900px;margin:0 auto;padding:22px 34px;display:flex;
+ justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px}
+.foot a{color:#fff}
+.back{font-size:14px;color:#6F675E;display:inline-block;margin:0 0 20px}
+@media (max-width:720px){
+ h1{font-size:36px} h1.pub{font-size:31px}
+ .body{padding:32px 20px 44px} .bar .in,.foot .in{padding:14px 20px}
+ .card{flex-direction:column;gap:16px;padding:20px} .cov{flex:none}
+ .cov img{width:132px} .card h2{font-size:20px} .name{font-size:24px}
+ .seg{font-size:12.5px;padding:4px 9px;white-space:normal}
+}
+
+.pick{margin:0 0 26px}
+.opt{display:block;position:relative;border:1px solid #DCD5C9;border-left:4px solid #DCD5C9;
+ border-radius:5px;padding:20px 22px 18px 56px;margin:0 0 12px;cursor:pointer;
+ background:#fff;transition:border-color .12s,background .12s}
+.opt:hover{border-color:#C7BEB0}
+.opt input{position:absolute;left:22px;top:23px;width:19px;height:19px;
+ accent-color:#B4460E;cursor:pointer;margin:0}
+.opt .nm{font-family:Georgia,serif;font-size:23px;line-height:1.15;font-weight:700;
+ letter-spacing:-.012em;margin:0 0 3px;display:block}
+.opt .who{font-size:14px;color:#5A6169;margin:0 0 12px}
+.opt .seglabel{margin:0 0 7px}
+.opt .segs{margin:0}
+.opt:has(input:checked){border-color:#B4460E;border-left-color:#B4460E;background:#FDFAF7}
+.opt:has(input:checked) .nm{color:#B4460E}
+.opt input:focus-visible{outline:3px solid #B4460E;outline-offset:3px}
+.handed{background:#F4F0E9;border:1px solid #E4DCCE;border-left:4px solid #B4460E;
+ border-radius:5px;padding:15px 20px;margin:0 0 24px;font-size:15px;line-height:1.55}
+.handed b{color:#B4460E}
+.fields{border-top:3px solid #14181F;padding:26px 0 0;margin:30px 0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap;margin:0 0 16px}
+.fld{flex:1 1 220px;min-width:0}
+.fld label{display:block;font-size:12px;font-weight:700;letter-spacing:.13em;
+ text-transform:uppercase;color:#6F675E;margin:0 0 6px}
+.fld input{width:100%;font:16px/1.4 inherit;color:#14181F;background:#fff;
+ border:1px solid #C7BEB0;border-radius:3px;padding:11px 13px}
+.fld input:focus{outline:none;border-color:#B4460E;box-shadow:0 0 0 3px rgba(180,70,14,.14)}
+.fld .hint{font-size:13px;color:#6F675E;margin:6px 0 0}
+button.btn{border:0;cursor:pointer;font-family:inherit;font-size:15px;padding:13px 26px}
+button.btn[disabled]{background:#C7BEB0;cursor:not-allowed}
+.terms{font-size:13.5px;line-height:1.6;color:#5A6169;margin:16px 0 0;max-width:62ch}
+.err{background:#FBF1EA;border:1px solid #E8C9B2;border-radius:4px;
+ padding:13px 17px;margin:14px 0 0;font-size:14.5px;line-height:1.55;color:#7A3C10;
+ max-width:62ch}
+.warn{background:#FBF1EA;border:1px solid #E8C9B2;border-radius:4px;padding:14px 18px;
+ margin:0 0 26px;font-size:14.5px;line-height:1.6;color:#7A3C10}
+@media (max-width:720px){
+ .opt{padding:16px 16px 14px 48px} .opt input{left:16px;top:19px}
+ .opt .nm{font-size:20px}
+}
+</style></head><body><div class="sheet">
+<div class="bar"><div class="in"><a href="https://www.cernoglobus.com">CernoGlobus</a>
+<span class="r"><a href="/">All briefs</a> &nbsp;&middot;&nbsp; <a href="/desk/">The desk</a> &nbsp;&middot;&nbsp; <a href="/subscribe/" class="sub">Subscribe</a></span></div></div>
+<div class="body"><a class="back" href="/">&larr; All seven papers</a><h1>Get the brief for your trade</h1><p class="tag">Seven papers, one for each family of trades. Tick the ones that match what you do &mdash; most owners want one, some want two. Every other Monday, free, and you can stop any time.</p><div id="handed" class="handed" hidden></div><div class="hr"></div><p class="sec">Which papers</p><form class="pick" method="POST" action="https://cerno-subscribe.jobyj.workers.dev/" id="subform"><label class="opt" data-p="building-mechanical"><input type="checkbox" name="BRIEFS[]" value="4" aria-describedby="d-building-mechanical"><span class="nm">Building &amp; Mechanical</span><span class="who" id="d-building-mechanical">For the owner of a mechanical contracting business.</span><p class="seglabel">5 service segments</p><p class="segs"><span class="seg">HVAC</span><span class="seg">Plumbing</span><span class="seg">Electrical</span><span class="seg">Solar &amp; Storage</span><span class="seg">Commercial Refrigeration</span></p></label><label class="opt" data-p="build-renovate"><input type="checkbox" name="BRIEFS[]" value="5" aria-describedby="d-build-renovate"><span class="nm">Build &amp; Renovate</span><span class="who" id="d-build-renovate">For the owner of a building, roofing or renovation business.</span><p class="seglabel">6 service segments</p><p class="segs"><span class="seg">Roofing</span><span class="seg">Restoration</span><span class="seg">Garage Door</span><span class="seg">Exteriors</span><span class="seg">General Contracting</span><span class="seg">Home Building</span></p></label><label class="opt" data-p="home-services"><input type="checkbox" name="BRIEFS[]" value="7" aria-describedby="d-home-services"><span class="nm">Home Services</span><span class="who" id="d-home-services">For the owner of a residential services business.</span><p class="seglabel">6 service segments</p><p class="segs"><span class="seg">Pest Control</span><span class="seg">Septic &amp; Sewer</span><span class="seg">Landscape</span><span class="seg">Pool</span><span class="seg">Appliance Repair</span><span class="seg">Moving</span></p></label><label class="opt" data-p="commercial-facilities"><input type="checkbox" name="BRIEFS[]" value="8" aria-describedby="d-commercial-facilities"><span class="nm">Commercial &amp; Facilities</span><span class="who" id="d-commercial-facilities">For the owner of a commercial services or facilities business.</span><p class="seglabel">6 service segments</p><p class="segs"><span class="seg">Fire Protection</span><span class="seg">Paving</span><span class="seg">Facilities Services</span><span class="seg">Security Systems</span><span class="seg">Elevator</span><span class="seg">Venue &amp; Catering</span></p></label><label class="opt" data-p="professional-services"><input type="checkbox" name="BRIEFS[]" value="10" aria-describedby="d-professional-services"><span class="nm">Professional Services</span><span class="who" id="d-professional-services">For the owner of a professional services firm.</span><p class="seglabel">6 service segments</p><p class="segs"><span class="seg">Property Management</span><span class="seg">Independent Practices</span><span class="seg">Independent Agencies</span><span class="seg">Small Accounting Practices</span><span class="seg">Staffing Agencies</span><span class="seg">Brokerages and Agent Teams</span></p></label><label class="opt" data-p="practices"><input type="checkbox" name="BRIEFS[]" value="9" aria-describedby="d-practices"><span class="nm">Practices</span><span class="who" id="d-practices">For the owner of an independent practice.</span><p class="seglabel">6 service segments</p><p class="segs"><span class="seg">Dental</span><span class="seg">Veterinary</span><span class="seg">Aesthetics</span><span class="seg">Chiropractic &amp; Physical Therapy</span><span class="seg">Optometry &amp; Vision</span><span class="seg">Behavioral &amp; Mental Health</span></p></label><label class="opt" data-p="automotive-services"><input type="checkbox" name="BRIEFS[]" value="6" aria-describedby="d-automotive-services"><span class="nm">Automotive Services</span><span class="who" id="d-automotive-services">For the owner of a shop.</span><p class="seglabel">6 service segments</p><p class="segs"><span class="seg">Collision Repair</span><span class="seg">General Auto Repair</span><span class="seg">Tire &amp; Wheel</span><span class="seg">Auto Glass</span><span class="seg">Towing &amp; Roadside</span><span class="seg">Car Wash &amp; Detailing</span></p></label><div class="fields"><div class="row"><div class="fld"><label for="em">Your email</label><input id="em" type="email" name="EMAIL" required autocomplete="email" placeholder="you@yourcompany.com"></div><div class="fld"><label for="fn">First name <span style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></label><input id="fn" type="text" name="FIRSTNAME" autocomplete="given-name"></div></div><div class="row"><div class="fld"><label for="co">Company <span style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></label><input id="co" type="text" name="COMPANY" autocomplete="organization"><p class="hint">Only so we know which trades are reading. Never shown to anyone else.</p></div></div><div style="position:absolute;left:-9999px" aria-hidden="true"><label>Website<input type="text" name="WEBSITE" tabindex="-1" autocomplete="off"></label></div><p><button class="btn" type="submit" id="go" disabled>Send me the brief &nbsp;&rarr;</button></p><p class="err" id="err" hidden></p><p class="terms">We email you a confirmation link first &mdash; you are not subscribed until you click it, so a mistyped address never lands on a list. One email every other Monday per paper you pick, nothing else. Unsubscribe from the bottom of any issue. We do not sell, rent or share the list, and we do not send on anyone else&rsquo;s behalf.</p></div></form><div class="hr" style="margin:38px 0 26px"></div><p class="sec">Not sure which one</p><p style="max-width:62ch;margin:0 0 18px">Every issue is free to read without subscribing. Open <a href="/">the seven papers</a>, find the segment that matches your work, and read the current issue before you decide.</p>
+<script>
+(function () {
+  var THANKS = '/subscribe/thanks/';
+  var form = document.getElementById('subform');
+  var go = document.getElementById('go');
+  var boxes = form.querySelectorAll('input[type=checkbox]');
+  var email = document.getElementById('em');
+
+  function ready() {
+    var any = false;
+    boxes.forEach(function (b) { if (b.checked) any = true; });
+    go.disabled = !(any && email.value.indexOf('@') > 0);
+  }
+  boxes.forEach(function (b) { b.addEventListener('change', ready); });
+  email.addEventListener('input', ready);
+
+  // A reader holding a printed paper: its code carries ?p=<folder>. Tick that
+  // one, move it to the top, and say why it is ticked — an option that ticks
+  // itself with no explanation reads as a dark pattern.
+  var want = new URLSearchParams(location.search).get('p');
+  if (want) {
+    var opt = form.querySelector('.opt[data-p="' + CSS.escape(want) + '"]');
+    if (opt) {
+      opt.querySelector('input').checked = true;
+      form.insertBefore(opt, form.firstChild);
+      var note = document.getElementById('handed');
+      var name = opt.querySelector('.nm').textContent;
+      note.innerHTML = 'You came from the <b>' + name + '</b> paper, so it is '
+        + 'ticked below. Untick it or add others — nothing is sent until '
+        + 'you confirm by email.';
+      note.hidden = false;
+    }
+  }
+  // A plain form post would land the reader on a page of JSON. Post it here
+  // and move them ourselves. If the browser runs nothing, the form still
+  // posts the old way and the Worker still accepts it — it reads both.
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var err = document.getElementById('err');
+    err.hidden = true;
+    go.disabled = true;
+    go.textContent = 'Sending…';
+    var lists = [];
+    boxes.forEach(function (b) { if (b.checked) lists.push(Number(b.value)); });
+    fetch(form.action, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: email.value.trim(),
+        firstName: document.getElementById('fn').value,
+        company: document.getElementById('co').value,
+        website: form.querySelector('[name=WEBSITE]').value,
+        lists: lists
+      })
+    }).then(function (r) { return r.json().then(function (j) { return [r.ok, j]; }); })
+      .then(function (p) {
+        if (p[0] && p[1].ok) { location.href = THANKS; return; }
+        throw new Error((p[1] && p[1].error) || 'that did not go through');
+      })
+      .catch(function (ex) {
+        err.textContent = ex.message + ' — or write to info@cernoglobus.com '
+          + 'and we will add you by hand.';
+        err.hidden = false;
+        go.disabled = false;
+        go.textContent = 'Send me the brief  →';
+      });
+  });
+
+  ready();
+})();
+</script></div><div class="foot"><div class="in">
+<span>&copy; CernoGlobus &middot; Field Intelligence &middot; the AI division of CyberSainya</span>
+<span><a href="/subscribe/">Subscribe</a> &nbsp;&middot;&nbsp;
+<a href="https://www.cernoglobus.com/ai-for-business-growth">AI for Business Growth</a> &nbsp;&middot;&nbsp;
+<a href="https://www.cernoglobus.com/#platforms">The Revenue Engine</a></span>
+</div></div></div></body></html>

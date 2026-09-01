@@ -28,15 +28,27 @@ h1{font-family:Georgia,"Times New Roman",serif;font-size:52px;line-height:1.04;
 h1.pub{font-size:44px}
 .tag{font-family:Georgia,serif;font-style:italic;font-size:19px;line-height:1.5;
  color:#3A4047;margin:0 0 28px;max-width:46ch}
-.segs{background:#F4F0E9;border-left:3px solid #B4460E;padding:9px 14px;
- margin:0 0 18px;font-size:14px;color:#3A4047;border-radius:0 3px 3px 0;max-width:64ch}
-.segs b{color:#14181F}
+.seglabel{font-size:11.5px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+ color:#B4460E;margin:0 0 8px}
+.segs{margin:0 0 16px;max-width:64ch}
+.seg{display:inline-block;background:#F4F0E9;border:1px solid #E4DCCE;color:#2E343B;
+ font-size:13px;font-weight:600;line-height:1.35;padding:5px 10px;border-radius:3px;
+ margin:0 6px 6px 0;white-space:nowrap}
 .hr{height:3px;background:#14181F;margin:0 0 32px}
 .sec{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
  color:#6F675E;margin:0 0 22px}
-.card{display:flex;gap:28px;align-items:flex-start;padding:0 0 28px;margin:0 0 28px;
- border-bottom:1px solid #DCD5C9}
-.card:last-child{border-bottom:0;margin-bottom:0}
+.card{display:flex;gap:26px;align-items:flex-start;padding:24px 26px;margin:0 0 20px;
+ border:1px solid #DCD5C9;border-left:4px solid #B4460E;border-radius:5px;background:#fff}
+.card:hover{border-color:#C7BEB0;border-left-color:#B4460E}
+.card .txt{flex:1;min-width:0}
+.name{font-family:Georgia,serif;font-size:29px;line-height:1.1;margin:0 0 12px;
+ letter-spacing:-.015em;font-weight:700}
+.name a{color:#14181F}
+.inthis{border-top:1px solid #EBE5DB;padding:14px 0 0;margin:4px 0 16px}
+.kick{font-size:11.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+ color:#6F675E;margin:0 0 6px}
+.lead{font-family:Georgia,serif;font-size:17.5px;line-height:1.35;margin:0 0 8px}
+.lead a{color:#14181F}
 .cov{flex:0 0 168px}
 .cov img{width:168px;height:auto;display:block;border:1px solid #DCD5C9;
  box-shadow:0 2px 10px rgba(20,24,31,.10)}
@@ -46,10 +58,7 @@ h1.pub{font-size:44px}
 .card h2{font-family:Georgia,serif;font-size:24px;line-height:1.22;margin:0 0 9px;
  letter-spacing:-.01em}
 .card h2 a{color:#14181F}
-.segline{background:#F4F0E9;border-left:3px solid #B4460E;padding:6px 11px;
- margin:0 0 9px;font-size:13px;color:#3A4047;border-radius:0 2px 2px 0}
-.segline b{color:#14181F}
-.sum{margin:0 0 12px;color:#3A4047;font-size:15.5px;line-height:1.6}
+.sum{margin:0;color:#4A5158;font-size:14.5px;line-height:1.55}
 .btn{display:inline-block;background:#B4460E;color:#fff;font-weight:700;
  font-size:14px;padding:10px 18px;border-radius:3px;letter-spacing:.01em}
 .btn:hover{background:#93380B;text-decoration:none}
@@ -64,8 +73,9 @@ h1.pub{font-size:44px}
 @media (max-width:720px){
  h1{font-size:36px} h1.pub{font-size:31px}
  .body{padding:32px 20px 44px} .bar .in,.foot .in{padding:14px 20px}
- .card{flex-direction:column;gap:16px} .cov{flex:none} .cov img{width:148px}
- .card h2{font-size:20px}
+ .card{flex-direction:column;gap:16px;padding:20px} .cov{flex:none}
+ .cov img{width:132px} .card h2{font-size:20px} .name{font-size:24px}
+ .seg{font-size:12.5px;padding:4px 9px;white-space:normal}
 }
 
 .ask{border-top:1px solid #DCD5C9;padding:22px 0 4px;margin:0}
@@ -81,7 +91,7 @@ h1.pub{font-size:44px}
 .fine{font-size:13.5px;color:#6F675E;line-height:1.65;margin:14px 0 0}
 </style></head><body><div class="sheet">
 <div class="bar"><div class="in"><a href="https://www.cernoglobus.com">CernoGlobus</a>
-<span class="r"><a href="/">All briefs</a> &nbsp;&middot;&nbsp; <a href="/desk/">The desk</a></span></div></div>
+<span class="r"><a href="/">All briefs</a> &nbsp;&middot;&nbsp; <a href="/desk/">The desk</a> &nbsp;&middot;&nbsp; <a href="/subscribe/" class="sub">Subscribe</a></span></div></div>
 <div class="body"><a class="back" href="/">&larr; All issues</a><h1>The Desk</h1><p class="tag">The half of the brief that comes from you.</p><div class="hr"></div><p class="sum">Every issue asks one question and prints what came back. But the brief is better when the traffic runs both ways all the time, not once a fortnight &mdash; so this page is open.</p><p class="sum" style="margin-bottom:26px">There are three things worth sending, and none of them takes more than a line. Nothing is published with your name or your company on it unless you say so in the message.</p><div class="ask"><h3>Answer this issue's question</h3><p>Every issue ends with one question about something in that issue. Reply with a line and it may run next issue, attributed to something like &ldquo;9-truck shop, Manassas&rdquo; and nothing more.</p><a href="mailto:info@cernoglobus.com?subject=Brief%20%E2%80%94%20answering%20this%20issue%27s%20question">Answer this issue's question &rarr;</a></div><div class="ask"><h3>Ask us to look into something</h3><p>This is the useful one. If there's a rule you can't get a straight answer on, a price increase you suspect isn't real, or a programme nobody will explain &mdash; tell us and we'll do the digging. If it stands up, it runs as an item, and you get the answer either way.</p><a href="mailto:info@cernoglobus.com?subject=Brief%20%E2%80%94%20something%20worth%20looking%20into">Ask us to look into something &rarr;</a></div><div class="ask"><h3>Send a tip</h3><p>Something moving in your county we'd otherwise miss. A permit change, an inspector's new position, a competitor bought out, a distributor letter doing the rounds. Local intelligence is the part we can't get from the trade press.</p><a href="mailto:info@cernoglobus.com?subject=Brief%20%E2%80%94%20a%20tip">Send a tip &rarr;</a></div><div class="form"><h3 style="font-family:Georgia,serif;font-size:21px;margin:0 0 8px">Or fill this in</h3><p class="sum">Five prompts, all optional. Nothing is sent anywhere until you press the button &mdash; it opens your own email with the answers filled in, so you can see exactly what goes and edit it first.</p><div id="deskform"><label><span>What do you do, and roughly how many people?</span><textarea data-q="What do you do, and roughly how many people?" rows="2"></textarea></label><label><span>What should we look into?</span><textarea data-q="What should we look into?" rows="2"></textarea></label><label><span>Anything happening locally we'd miss?</span><textarea data-q="Anything happening locally we'd miss?" rows="2"></textarea></label><label><span>What in the brief has actually been useful?</span><textarea data-q="What in the brief has actually been useful?" rows="2"></textarea></label><label><span>What would you cut?</span><textarea data-q="What would you cut?" rows="2"></textarea></label></div><p><a class="btn" id="mk" href="#" role="button">Open this in my email &nbsp;&rarr;</a></p><p class="fine">No form data leaves this page. The button builds an email in your own client and you send it, or don't.</p><p class="fine">We read every one. We don't add you to anything for writing in, we don't pass your address on, and we don't follow up with a sales call &mdash; if you want to talk to us about the products, the links are all over the brief already.</p></div>
 <script>
 (function(){
@@ -102,7 +112,7 @@ h1.pub{font-size:44px}
 </script>
 </div><div class="foot"><div class="in">
 <span>&copy; CernoGlobus &middot; Field Intelligence &middot; the AI division of CyberSainya</span>
-<span><a href="https://www.cernoglobus.com/#contact">Subscribe</a> &nbsp;&middot;&nbsp;
+<span><a href="/subscribe/">Subscribe</a> &nbsp;&middot;&nbsp;
 <a href="https://www.cernoglobus.com/ai-for-business-growth">AI for Business Growth</a> &nbsp;&middot;&nbsp;
 <a href="https://www.cernoglobus.com/#platforms">The Revenue Engine</a></span>
 </div></div></div></body></html>
