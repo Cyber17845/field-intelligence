@@ -113,14 +113,37 @@ button.btn[disabled]{background:#C7BEB0;cursor:not-allowed}
  max-width:62ch}
 .warn{background:#FBF1EA;border:1px solid #E8C9B2;border-radius:4px;padding:14px 18px;
  margin:0 0 26px;font-size:14.5px;line-height:1.6;color:#7A3C10}
+/* The sticky picker bar. Off entirely on a wide screen, where the form is
+   one glance from top to bottom and a pinned bar would only be in the way. */
+.stickybar{display:none}
 @media (max-width:720px){
- .opt{padding:16px 16px 14px 48px} .opt input{left:16px;top:19px}
- .opt .nm{font-size:20px}
+ .opt{padding:15px 15px 13px 45px} .opt input{left:15px;top:18px}
+ .opt .nm{font-size:19px;margin:0 0 2px}
+ .opt .who{font-size:13.5px;margin:0 0 7px}
+ /* Seven papers with their segments as chips ran 1,818px on a 375px screen,
+    which put the submit button three and a half screens down. The segments
+    are how an owner works out which paper is theirs, so they stay — as one
+    wrapped line of text instead of five rows of boxes. */
+ .opt .seglabel{display:none}
+ .opt .segs{margin:0;font-size:13px;line-height:1.5;color:#5A6169}
+ .opt .seg{display:inline;background:none;border:0;border-radius:0;
+  padding:0;margin:0;font-size:13px;font-weight:600;color:#5A6169;
+  white-space:normal;line-height:1.5}
+ .opt .seg + .seg:before{content:" · ";color:#B9B2A6;font-weight:400}
+ .stickybar{position:fixed;left:0;right:0;bottom:0;z-index:40;
+  background:#14181F;color:#fff;padding:10px 16px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  font-size:14px;font-weight:600;
+  box-shadow:0 -2px 16px rgba(20,24,31,.24)}
+ .stickybar[hidden]{display:none}
+ .stickybar .btn{padding:9px 16px;font-size:14px;white-space:nowrap}
+ body.hasbar .foot .in{padding-bottom:80px}
 }
 </style></head><body><div class="sheet">
 <div class="bar"><div class="in"><a href="https://www.cernoglobus.com">CernoGlobus</a>
 <span class="r"><a href="/">All briefs</a> &nbsp;&middot;&nbsp; <a href="/desk/">The desk</a> &nbsp;&middot;&nbsp; <a href="/subscribe/" class="sub">Subscribe</a></span></div></div>
 <div class="body"><a class="back" href="/">&larr; All seven papers</a><h1>Get the brief for your trade</h1><p class="tag">Seven papers, one for each family of trades. Tick the ones that match what you do &mdash; most owners want one, some want two. Every other Monday, free, and you can stop any time.</p><div id="handed" class="handed" hidden></div><div class="hr"></div><p class="sec">Which papers</p><form class="pick" method="POST" action="https://cerno-subscribe.jobyj.workers.dev/" id="subform"><label class="opt" data-p="building-mechanical"><input type="checkbox" name="BRIEFS[]" value="4" aria-describedby="d-building-mechanical"><span class="nm">Building &amp; Mechanical</span><span class="who" id="d-building-mechanical">For the owner of a mechanical contracting business.</span><p class="seglabel">5 service segments</p><p class="segs"><span class="seg">HVAC</span><span class="seg">Plumbing</span><span class="seg">Electrical</span><span class="seg">Solar &amp; Storage</span><span class="seg">Commercial Refrigeration</span></p></label><label class="opt" data-p="build-renovate"><input type="checkbox" name="BRIEFS[]" value="5" aria-describedby="d-build-renovate"><span class="nm">Build &amp; Renovate</span><span class="who" id="d-build-renovate">For the owner of a building, roofing or renovation business.</span><p class="seglabel">6 service segments</p><p class="segs"><span class="seg">Roofing</span><span class="seg">Restoration</span><span class="seg">Garage Door</span><span class="seg">Exteriors</span><span class="seg">General Contracting</span><span class="seg">Home Building</span></p></label><label class="opt" data-p="home-services"><input type="checkbox" name="BRIEFS[]" value="7" aria-describedby="d-home-services"><span class="nm">Home Services</span><span class="who" id="d-home-services">For the owner of a residential services business.</span><p class="seglabel">6 service segments</p><p class="segs"><span class="seg">Pest Control</span><span class="seg">Septic &amp; Sewer</span><span class="seg">Landscape</span><span class="seg">Pool</span><span class="seg">Appliance Repair</span><span class="seg">Moving</span></p></label><label class="opt" data-p="commercial-facilities"><input type="checkbox" name="BRIEFS[]" value="8" aria-describedby="d-commercial-facilities"><span class="nm">Commercial &amp; Facilities</span><span class="who" id="d-commercial-facilities">For the owner of a commercial services or facilities business.</span><p class="seglabel">6 service segments</p><p class="segs"><span class="seg">Fire Protection</span><span class="seg">Paving</span><span class="seg">Facilities Services</span><span class="seg">Security Systems</span><span class="seg">Elevator</span><span class="seg">Venue &amp; Catering</span></p></label><label class="opt" data-p="professional-services"><input type="checkbox" name="BRIEFS[]" value="10" aria-describedby="d-professional-services"><span class="nm">Professional Services</span><span class="who" id="d-professional-services">For the owner of a professional services firm.</span><p class="seglabel">6 service segments</p><p class="segs"><span class="seg">Property Management</span><span class="seg">Independent Practices</span><span class="seg">Independent Agencies</span><span class="seg">Small Accounting Practices</span><span class="seg">Staffing Agencies</span><span class="seg">Brokerages and Agent Teams</span></p></label><label class="opt" data-p="practices"><input type="checkbox" name="BRIEFS[]" value="9" aria-describedby="d-practices"><span class="nm">Practices</span><span class="who" id="d-practices">For the owner of an independent practice.</span><p class="seglabel">6 service segments</p><p class="segs"><span class="seg">Dental</span><span class="seg">Veterinary</span><span class="seg">Aesthetics</span><span class="seg">Chiropractic &amp; Physical Therapy</span><span class="seg">Optometry &amp; Vision</span><span class="seg">Behavioral &amp; Mental Health</span></p></label><label class="opt" data-p="automotive-services"><input type="checkbox" name="BRIEFS[]" value="6" aria-describedby="d-automotive-services"><span class="nm">Automotive Services</span><span class="who" id="d-automotive-services">For the owner of a shop.</span><p class="seglabel">6 service segments</p><p class="segs"><span class="seg">Collision Repair</span><span class="seg">General Auto Repair</span><span class="seg">Tire &amp; Wheel</span><span class="seg">Auto Glass</span><span class="seg">Towing &amp; Roadside</span><span class="seg">Car Wash &amp; Detailing</span></p></label><div class="fields"><div class="row"><div class="fld"><label for="em">Your email</label><input id="em" type="email" name="EMAIL" required autocomplete="email" placeholder="you@yourcompany.com"></div><div class="fld"><label for="fn">First name <span style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></label><input id="fn" type="text" name="FIRSTNAME" autocomplete="given-name"></div></div><div class="row"><div class="fld"><label for="co">Company <span style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></label><input id="co" type="text" name="COMPANY" autocomplete="organization"><p class="hint">Only so we know which trades are reading. Never shown to anyone else.</p></div></div><div style="position:absolute;left:-9999px" aria-hidden="true"><label>Website<input type="text" name="WEBSITE" tabindex="-1" autocomplete="off"></label></div><p><button class="btn" type="submit" id="go" disabled>Send me the brief &nbsp;&rarr;</button></p><p class="err" id="err" hidden></p><p class="terms">We email you a confirmation link first &mdash; you are not subscribed until you click it, so a mistyped address never lands on a list. One email every other Monday per paper you pick, nothing else. Unsubscribe from the bottom of any issue. We do not sell, rent or share the list, and we do not send on anyone else&rsquo;s behalf.</p></div></form><div class="hr" style="margin:38px 0 26px"></div><p class="sec">Not sure which one</p><p style="max-width:62ch;margin:0 0 18px">Every issue is free to read without subscribing. Open <a href="/">the seven papers</a>, find the segment that matches your work, and read the current issue before you decide.</p>
+<div class="stickybar" id="sticky" hidden><span id="stickytxt"></span><button type="button" class="btn" id="stickygo">Continue &nbsp;&rarr;</button></div>
 <script>
 (function () {
   var THANKS = '/subscribe/thanks/';
@@ -129,10 +152,42 @@ button.btn[disabled]{background:#C7BEB0;cursor:not-allowed}
   var boxes = form.querySelectorAll('input[type=checkbox]');
   var email = document.getElementById('em');
 
+  // On a phone the seven papers push the email field and the submit button
+  // well below the fold, so a reader who ticks a paper has nothing to act on
+  // where they are looking. This bar pins the next step to the bottom of the
+  // screen the moment something is ticked, and gets out of the way as soon as
+  // the real button is on screen. It submits nothing — it only takes you to
+  // the field you have to fill in.
+  var bar = document.getElementById('sticky');
+  var barTxt = document.getElementById('stickytxt');
+  var small = window.matchMedia('(max-width: 720px)');
+  var goSeen = false;
+
+  function barState() {
+    var n = 0;
+    boxes.forEach(function (b) { if (b.checked) n++; });
+    barTxt.textContent = n === 1 ? '1 paper picked' : n + ' papers picked';
+    bar.hidden = !(small.matches && n > 0 && !goSeen);
+    document.body.classList.toggle('hasbar', !bar.hidden);
+  }
+
+  if (window.IntersectionObserver) {
+    new IntersectionObserver(function (entries) {
+      goSeen = entries[0].isIntersecting;
+      barState();
+    }, { rootMargin: '0px 0px -70px 0px' }).observe(go);
+  }
+  if (small.addEventListener) small.addEventListener('change', barState);
+  document.getElementById('stickygo').addEventListener('click', function () {
+    email.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    setTimeout(function () { email.focus({ preventScroll: true }); }, 450);
+  });
+
   function ready() {
     var any = false;
     boxes.forEach(function (b) { if (b.checked) any = true; });
     go.disabled = !(any && email.value.indexOf('@') > 0);
+    barState();
   }
   boxes.forEach(function (b) { b.addEventListener('change', ready); });
   email.addEventListener('input', ready);
